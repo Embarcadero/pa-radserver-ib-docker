@@ -5,7 +5,7 @@ Docker script for RAD Studio Linux deployment including RAD Server engine and In
 - Container available on [Docker Hub](https://hub.docker.com/r/radstudio/paserver)
 - DocWiki [PAServer Documentation](http://docwiki.embarcadero.com/RADStudio/en/PAServer,_the_Platform_Assistant_Server_Application)
 - DocWiki [RAD Server Docker Deployment](https://docwiki.embarcadero.com/RADStudio/en/RAD_Server_Docker_Deployment)
-- More information on [InterBase]()
+- More information on [InterBase](https://docwiki.embarcadero.com/InterBase/2017/en)
 - More information on [RAD Studio](https://www.embarcadero.com/products/rad-studio)
 - Other containers: [PAServer](https://github.com/Embarcadero/paserver-docker) and [RAD Server container](https://github.com/Embarcadero/pa-radserver-docker).
 
