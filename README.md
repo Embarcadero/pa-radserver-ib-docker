@@ -1,5 +1,19 @@
 # pa-radserver-ib-docker
+
 Docker script for RAD Studio Linux deployment including RAD Server engine and InterBase database
+
+- Container available on [Docker Hub](https://hub.docker.com/r/radstudio/paserver)
+- DocWiki [PAServer Documentation](http://docwiki.embarcadero.com/RADStudio/en/PAServer,_the_Platform_Assistant_Server_Application)
+- DocWiki [RAD Server Docker Deployment](https://docwiki.embarcadero.com/RADStudio/en/RAD_Server_Docker_Deployment)
+- More information on [InterBase]()
+- More information on [RAD Studio](https://www.embarcadero.com/products/rad-studio)
+- Other containers: [PAServer](https://github.com/Embarcadero/paserver-docker) and [RAD Server container](https://github.com/Embarcadero/pa-radserver-docker).
+
+The image defaults to running **PAServer** on port `64211` with the _password_ `securepass`, and **Broadwayd** on port `8082`
+
+The 10.x images use Ubuntu 18.04.6 LTS (Bionic Beaver) while the 11.x images use Ubuntu 22.04.1 LTS (Jammy Jellyfish)
+
+## Instructions
 
 To build using the Dockerfile use the `build.sh` script. Note: The Dockerfile requires the `radserver_docker.sh` script in the same directory
 ```
