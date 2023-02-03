@@ -11,6 +11,8 @@ try{
         Write-Verbose "RAD Server does not seem to be working"
         exit 1
     }
+}catch{
+    throw        
 }
 
 Write-Verbose "RAD Server is installed and works"
