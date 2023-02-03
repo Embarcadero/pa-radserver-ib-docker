@@ -7,10 +7,16 @@ foreach ($TestScript in (Get-ChildItem -Path *.ps1)) {
     if($TestScript.BaseName -ne $ScriptName){
         $shortname = $TestScript.BaseName
         Write-Verbose "Running $shortname"
-        & $TestScript
-        $Result = $Result -and $?
-        if(-not $?){
-            Write-Warning "$shortname failed"
+        try {
+            & $TestScript
+            if(-not $?){
+                $Result = $false
+                Write-Warning "$shortname failed gracefully. `$LASTEXITCODE is $LASTEXITCODE"
+            }
+            }
+        catch {
+            $Result = $false
+            Write-Warning "$shortname failed with exception: ""$_"""
         }
     }
 }
