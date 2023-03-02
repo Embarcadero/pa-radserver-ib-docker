@@ -1,8 +1,8 @@
 # pa-radserver-ib-docker
 
-Docker script for RAD Studio Linux deployment including RAD Server engine and InterBase database
+Docker script to build RAD Studio Linux deployment including RAD Server engine and InterBase database
 
-- Container available on [Docker Hub](https://hub.docker.com/r/radstudio/paserver)
+- Container available on [Docker Hub](https://hub.docker.com/r/radstudio/pa-radserver-ib)
 - DocWiki [PAServer Documentation](http://docwiki.embarcadero.com/RADStudio/en/PAServer,_the_Platform_Assistant_Server_Application)
 - DocWiki [RAD Server Docker Deployment](https://docwiki.embarcadero.com/RADStudio/en/RAD_Server_Docker_Deployment)
 - More information on [InterBase](https://docwiki.embarcadero.com/InterBase/2017/en)
@@ -15,12 +15,12 @@ The 10.x images use Ubuntu 18.04.6 LTS (Bionic Beaver) while the 11.x images use
 
 ## Instructions
 
-To build using the Dockerfile use the `build.sh` script. Note: The Dockerfile requires the `radserver_docker.sh` script in the same directory
+If you want to modify or build from GitHub without using [Docker Hub](https://hub.docker.com/r/radstudio/pa-radserver-ib), you can build the Dockerfile use the `build.sh` script. Note: The Dockerfile requires the `radserver_docker.sh` script in the same directory
 ```
 ./build.sh 
 ```
 
-To pull the [Docker Hub version of pa-radserver-ib](https://hub.docker.com/r/radstudio/pa-radserver-ib) of the image use the `pull.sh` script
+To pull the [Docker Hub version of pa-radserver-ib](https://hub.docker.com/r/radstudio/pa-radserver-ib) image use the `pull.sh` script
 ```
 ./pull.sh
 ```
@@ -30,7 +30,7 @@ docker pull radstudio/pa-radserver-ib:latest
 ```
 Where `latest` is the desired tag.
 
-To pull and run the [Docker Hub](https://hub.docker.com/r/radstudio/pa-radserver-ib) version of pa-radserver-ib Docker for a non-production environment use the `pull-run.sh` script
+To pull and run the [Docker Hub](https://hub.docker.com/r/radstudio/pa-radserver-ib) version of pa-radserver-ib Docker for a debug/non-production environment use the `pull-run.sh` script
 ```
 ./pull-run.sh
 ```
@@ -40,7 +40,7 @@ To run the [Docker Hub version of pa-radserver-ib Docker](https://hub.docker.com
 ./run.sh
 ```
 
-To run the [Docker Hub version of pa-radserver-ib Docker](https://hub.docker.com/r/radstudio/pa-radserver-ib) for in interbase only mode use the `run-interbase-only.sh` script
+To run the [Docker Hub version of pa-radserver-ib Docker](https://hub.docker.com/r/radstudio/pa-radserver-ib) for in InterBase only mode use the `run-interbase-only.sh` script
 ```
 ./run-interbase-only.sh
 ```
