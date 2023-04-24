@@ -7,7 +7,7 @@ Docker script to build RAD Studio Linux deployment including RAD Server engine a
 - DocWiki [RAD Server Docker Deployment](https://docwiki.embarcadero.com/RADStudio/en/RAD_Server_Docker_Deployment)
 - More information on [InterBase](https://docwiki.embarcadero.com/InterBase/2017/en)
 - More information on [RAD Studio](https://www.embarcadero.com/products/rad-studio)
-- Other containers: [PAServer](https://github.com/Embarcadero/paserver-docker) and [RAD Server container](https://github.com/Embarcadero/pa-radserver-docker).
+- Other containers: [InterBase](https://github.com/Embarcadero/InterBase-Docker) only, [PAServer](https://github.com/Embarcadero/paserver-docker) and [RAD Server container](https://github.com/Embarcadero/pa-radserver-docker).
 
 The image defaults to running **PAServer** on port `64211` with the _password_ `securepass`, and **Broadwayd** on port `8082`
 
