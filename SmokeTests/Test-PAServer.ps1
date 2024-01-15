@@ -1,7 +1,7 @@
 Set-Location $PSScriptRoot
 
 # find out RAD Studio directory
-$BDSVersion = "22.0"
+$BDSVersion = "23.0"
 $BDSDirectory = (Get-ItemProperty `
     -Path "registry::HKEY_CURRENT_USER\SOFTWARE\Embarcadero\BDS\$BDSVersion" `
     -Name RootDir).RootDir
