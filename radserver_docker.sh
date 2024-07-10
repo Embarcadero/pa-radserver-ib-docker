@@ -15,14 +15,6 @@ if [ -f /etc/ems/module.so ]; then
 	sed -i ':a;N;$!ba;s#\[Server\.Packages\]\n#\[Server\.Packages\]\n/etc/ems/module.so=module#g' /etc/ems/emsserver.ini
 fi
 
-if [ "$CONFIG" = "PRODUCTION" ]; then
-	:
-else
-	nohup broadwayd :2 &
-	export GDK_BACKEND=broadway
-	export BROADWAY_DISPLAY=:2
-fi
-
 /usr/sbin/apachectl -D Foreground
 status=$?
 if [ $status -ne 0 ]; then
