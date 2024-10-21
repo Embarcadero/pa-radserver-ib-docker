@@ -7,4 +7,4 @@ docker run  --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
     --mount source=interbase,target=/opt/interbase \
     --mount source=ems,target=/etc/ems  \
     --platform linux/amd64 \
-    radstudio/pa-radserver-ib:latest
+    radstudio/pa-radserver-ib:12.1.1
