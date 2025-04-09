@@ -1,4 +1,4 @@
-FROM radstudio/pa-radserver-ib:latest
+FROM radstudio/pa-radserver-ib:12.2.1
 
 ARG password=embtdocker
 ARG modulefile
